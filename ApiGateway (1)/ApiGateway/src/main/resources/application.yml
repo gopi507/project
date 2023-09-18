@@ -1,0 +1,28 @@
+server:
+  port: 8084
+
+ 
+
+zuul:
+  #Service will be mapped under the /api URI
+  prefix: /api-gateway
+  routes:
+    Product:
+      path: /**
+      url: http://localhost:8083
+
+      
+      
+spring:
+  application:
+    name: ApiGateway   
+    
+       
+    
+ 
+
+ 
+
+ 
+
+ 
